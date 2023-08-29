@@ -8,8 +8,9 @@
 const getBeers = require('../data')
 
 function getTargetBeer() {
-    const beers = getBeers();
-    return beers[beers.length -1].name
+    const beers = getBeers()
+    const firstBeer = beers.at(0)
+    return firstBeer.name
 }
 
 console.log(getTargetBeer())
